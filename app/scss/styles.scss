@@ -2,10 +2,39 @@
 	width: percentage(5/7);
 }
 
-html {
-	background: #000;
+body {
+	background-image: url('../images/1440-8.jpg');
+	background-repeat: no-repeat;
+	border: 1px solid yellow;
 	margin: 20px;
 	padding: 20px;
-	border: 1px solid yellow;
-	height: 90%;
+	height: 900px;
 }
+
+h1 {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-weight: 100;
+	color: white;
+	margin: 0 auto;
+}
+
+.project-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: blue;
+}
+
+.project-box{
+	border: 1px solid black;
+	background: grey;
+	border-radius: 10%;
+	width: 25%;
+	height: 300px;
+	h1 {
+		color: red;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+

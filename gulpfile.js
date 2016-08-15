@@ -9,7 +9,7 @@ var imagemin	= require('gulp-imagemin');
 var cache		= require('gulp-cache');
 var del 		= require('del');
 var runSequence = require('run-sequence');
-
+var plumber		= require('gulp-plumber')
 /*gulp.task('hello', function() {
 	console.log('Hello Ryan');
 });*/
@@ -44,6 +44,7 @@ gulp.task('default', function(callback) {
 
 gulp.task('sass', function() {
 	return gulp.src('app/scss/**/*.scss')
+	.pipe(plumber())
 	.pipe(sass())
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({
