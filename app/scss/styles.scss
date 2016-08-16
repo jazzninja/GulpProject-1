@@ -1,43 +1,76 @@
-.bg-image {
-	display: block;
-	background:url('../images/1440-8.jpg') no-repeat center;
-    background-size:cover;
-    -webkit-filter: blur(13px);
-    -moz-filter: blur(13px);
-    -o-filter: blur(13px);
-    -ms-filter: blur(13px);
-    filter: blur(13px);
-    position:absolute;
-    width:100%;
-    height:100%;	
-}
+html, body {
+	background: #7c98eb;
+	background: -moz-linear-gradient(-45deg, #7c98eb 0%, #4a78c2 31%, #172d6b 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, #7c98eb), color-stop(31%, #4a78c2), color-stop(100%, #172d6b));
+	background: -webkit-linear-gradient(-45deg, #7c98eb 0%, #4a78c2 31%, #172d6b 100%);
+	background: -o-linear-gradient(-45deg, #7c98eb 0%, #4a78c2 31%, #172d6b 100%);
+	background: -ms-linear-gradient(-45deg, #7c98eb 0%, #4a78c2 31%, #172d6b 100%);
+	background: linear-gradient(135deg, #7c98eb 0%, #4a78c2 31%, #172d6b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c98eb', endColorstr='#172d6b', GradientType=1 );
+	height: 100%;
+	font-family: 'Reenie Beanie', cursive;
+	margin: 0px;
+};
 
-h1 {
-	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-	font-weight: 100;
+.project-container {
+	height: auto;
+	border: 1px solid black;
+
+};
+
+#ma-nav-bar {
+	height: auto;
+	width: 100%;
+	background-color: #3f60ba;
 	color: white;
-	margin: 0 auto;
+	margin: 0em;
+	position: fixed;
+    top: 0;
 }
 
-.project-container{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	background-color: transparent;
-	border: 1px solid black;
-	height: 900px;
+#nav-wrapper {
+	margin-left: 1em;
 }
 
-.project-box {
-	border: 1px solid black;
-	background: grey;
-	border-radius: 10%;
-	width: 30%;
-	height: 50%;
-	h1 {
-		color: red;
-		margin: 0 auto;
-		text-align: center;
-	}
+#ma-nav-bar ul {
+	margin-top: 0em;
+	margin-left: 0em;
+	padding-left: 0em;
+	list-style-type: none;
+	text-decoration: none;
+	list-style: none;
 }
 
+#ma-nav-bar ul li {
+	display: inline-block;
+	margin-left: 0em;
+	padding-left: 0em;	
+	list-style: none;
+	float: left;
+}
+
+.nav-logo-txt {
+	padding: 1em 0em 0.25em 0em;
+	margin: 0em;
+	font-family: 'Bungee Shade', cursive;
+	font-size: 4vw;
+	font-weight: 100;
+}
+
+.hidden {
+	display: none;
+}
+
+.nav-logo-txt .iphone>span {
+	visibility: hidden;
+	font-size: 2vw;
+	text-align: center;
+}
+
+.nav-btn-1 {
+	border: none;
+	background: none;
+	font-family: 'Reenie Beanie', cursive;
+	color: white;
+	font-size: 2vw;	
+}

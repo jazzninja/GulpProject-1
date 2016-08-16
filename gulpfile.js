@@ -53,7 +53,8 @@ gulp.task('sass', function() {
 });
 
 gulp.task('useref', function() {
-	return gulp.src('app/*.html')	
+	return gulp.src('app/*.html')
+		.pipe(plumber())	
 		.pipe(useref())
 		.pipe(gulpIf('*.js', uglify()))
 		.pipe(gulpIf('*.css', cssnano()))
@@ -62,6 +63,7 @@ gulp.task('useref', function() {
 
 gulp.task('images', function() {
 	return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
+	.pipe(plumber())
 	.pipe(cache(imagemin({
 		interlaced: true
 	})))
@@ -70,6 +72,7 @@ gulp.task('images', function() {
 
 gulp.task('fonts', function() {
 	return gulp.src('app/fonts/**/*')
+	.pipe(plumber())
 	.pipe(gulp.dest('dist/fonts'))
 });
 
