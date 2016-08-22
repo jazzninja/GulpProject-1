@@ -96,14 +96,19 @@
   padding-left: 0em;
   list-style-type: none;
   text-decoration: none;
-  list-style: none; }
+  list-style: none;
+  font-size: 10pt; }
 
 #ma-nav-bar ul li {
   display: inline-block;
   margin-left: 0em;
+  margin-right: 0.25em;
   padding-left: 0em;
   list-style: none;
   float: left; }
+
+#ma-nav-bar ul li button {
+  cursor: pointer; }
 
 .nav-logo-txt {
   padding: 1em 0em 0.25em 0em;
