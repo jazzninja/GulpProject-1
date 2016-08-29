@@ -4,6 +4,12 @@ $projectContactColor: #172d6b;
 $mainTextColor: black;
 $contactTextColor: white;
 
+$breakSmall: 400px;
+$breakMedium: 665px;
+$breakMedium2: 555px;
+$breakLarge: 1200px;
+
+
 .project-container {
 	display: flex;
 	justify-content: space-around;
@@ -102,17 +108,15 @@ $contactTextColor: white;
 	display: flex;
 	margin: 0 auto;
 	margin-bottom: 2em;
-	text-align: center;
-	border: 1px solid black;
-	border-radius: 20%;
-	width: 80%;
+	width: auto;
+	padding: 2em auto;
 }
 
 .landing-text {
 	color: white;
 	font-weight: 100;
 	margin: 0px auto;
-	padding: 1em auto;
+	padding: 2em auto;
 
 }
 
@@ -122,16 +126,39 @@ $contactTextColor: white;
 
 .ma-landing-image {
 	background-image: url("../images/messin-about-splash-image.png"); 
+	height: 32.65vw;
+	width: 34.75vw;
+	border-radius: 50%;
 	background-repeat: no-repeat;
     background-size: contain;
-	border: 1px solid black;
+	margin: 1em auto;
+	box-shadow: 5px 5px 50px #000;
+	@media screen and (max-width: $breakSmall) {
+		height: 61vw;
+		width: 64.7vw;	
+	}
+	@media screen and (max-width: $breakMedium) {
+		height: 61vw;
+		width: 64.7vw;	
+	}
+	@media screen and (max-width: $breakMedium2) {
+		height: 61vw;
+		width: 64.7vw;	
+	}
 
 }
 
-$breakSmall: 400px;
-$breakMedium: 665px;
-$breakMedium2: 555px;
-$breakLarge: 1200px;
+.footer-text h2 {
+	font-size: 2vw;
+    width: 25%;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    @media screen and (max-width: $breakMedium) {
+    	width: 75%;
+		font-size: 5vw;		
+	}
+}
 
 #ma-nav-bar {
 	width: 100%;
@@ -432,17 +459,17 @@ html, body {
 	background: -ms-linear-gradient(-45deg, #7c98eb 0%, #4a78c2 31%, #172d6b 100%);
 	background: linear-gradient(135deg, #7c98eb 0%, #4a78c2 31%, #172d6b 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c98eb', endColorstr='#172d6b', GradientType=1 );
-	height: auto;
+	height: 100%;
 	font-family: 'Reenie Beanie', cursive;
 	margin: 0px;
 	@media screen and (max-width: $breakSmall) {
-    	max-height: auto;
+    	max-height: 100%;
     }
 	@media screen and (max-width: $breakMedium) {
-    	max-height: auto;
+    	max-height: 100%;
     }
 
     @media screen and (max-width: $breakMedium2) {
-    	max-height: auto;
+    	max-height: 100%;
     }
 }
