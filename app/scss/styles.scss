@@ -3,6 +3,15 @@ $projectBoxColorHover: #7c98eb;
 $projectContactColor: #172d6b;
 $mainTextColor: black;
 $contactTextColor: white;
+/*$OtherStuffBackgroundColor: {	background: rgb(241,111,92);
+								background: -moz-linear-gradient(-45deg, rgb(241,111,92) 0%, rgb(241,111,92) 35%, rgb(181,22,7) 100%);
+								background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(241,111,92)), color-stop(35%, rgb(241,111,92)), color-stop(100%, rgb(181,22,7)));
+								background: -webkit-linear-gradient(-45deg, rgb(241,111,92) 0%, rgb(241,111,92) 35%, rgb(181,22,7) 100%);
+								background: -o-linear-gradient(-45deg, rgb(241,111,92) 0%, rgb(241,111,92) 35%, rgb(181,22,7) 100%);
+								background: -ms-linear-gradient(-45deg, rgb(241,111,92) 0%, rgb(241,111,92) 35%, rgb(181,22,7) 100%);
+								background: linear-gradient(135deg, rgb(241,111,92) 0%, rgb(241,111,92) 35%, rgb(181,22,7) 100%);
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16f5c', endColorstr='#b51607', GradientType=1 );	};*/
+
 
 $breakSmall: 400px;
 $breakMedium: 665px;
@@ -148,12 +157,19 @@ $breakLarge: 1200px;
 
 }
 
+.project-container.otherstuff-box {
+
+}
+
 .footer-text h2 {
 	font-size: 2vw;
     width: 25%;
     color: white;
     margin: 0 auto;
     text-align: center;
+    sup {
+    	font-size: 1vw;
+    }
     @media screen and (max-width: $breakMedium) {
     	width: 75%;
 		font-size: 5vw;		
@@ -207,6 +223,7 @@ $breakLarge: 1200px;
 	font-family: 'Bungee Shade', cursive;
 	font-size: 20pt;
 	font-weight: 100;
+	cursor: pointer;
 }
 
 .nav-logo-txt p {
@@ -364,7 +381,13 @@ button {
 }
 
 .info-text {
-	font-size: 4vw;		
+	font-size: 3vw;
+}
+
+a.info-text {
+	@media screen and (max-width: $breakMedium) {
+    	font-size: 4vw;
+    }	
 }
 
 //About//
@@ -375,11 +398,32 @@ button {
 
 .about-info {
 	text-align: center;
+	width: 85%;
 }
 
 .about-text {
 	color: white;
 	font-weight: 100;
+}
+
+//Other Stuff//
+
+.otherstuff-box {
+	border: 1px solid black;
+	height: 500px;
+}
+
+.kewpie-container {
+	border: 1px solid black;
+    width: 50%;
+    background: url('../images/kewpie-01.png') center no-repeat;
+    @media screen and (max-width: $breakSmall) {
+    	width: 90%;
+    }
+}
+
+.kewpie-image {
+
 }
 
 

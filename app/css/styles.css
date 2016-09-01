@@ -1,3 +1,11 @@
+/*$OtherStuffBackgroundColor: {	background: rgb(241,111,92);
+								background: -moz-linear-gradient(-45deg, rgb(241,111,92) 0%, rgb(241,111,92) 35%, rgb(181,22,7) 100%);
+								background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(241,111,92)), color-stop(35%, rgb(241,111,92)), color-stop(100%, rgb(181,22,7)));
+								background: -webkit-linear-gradient(-45deg, rgb(241,111,92) 0%, rgb(241,111,92) 35%, rgb(181,22,7) 100%);
+								background: -o-linear-gradient(-45deg, rgb(241,111,92) 0%, rgb(241,111,92) 35%, rgb(181,22,7) 100%);
+								background: -ms-linear-gradient(-45deg, rgb(241,111,92) 0%, rgb(241,111,92) 35%, rgb(181,22,7) 100%);
+								background: linear-gradient(135deg, rgb(241,111,92) 0%, rgb(241,111,92) 35%, rgb(181,22,7) 100%);
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16f5c', endColorstr='#b51607', GradientType=1 );	};*/
 .project-container {
   display: flex;
   justify-content: space-around;
@@ -119,6 +127,8 @@
   color: white;
   margin: 0 auto;
   text-align: center; }
+  .footer-text h2 sup {
+    font-size: 1vw; }
   @media screen and (max-width: 665px) {
     .footer-text h2 {
       width: 75%;
@@ -165,7 +175,8 @@
   margin: 0em;
   font-family: 'Bungee Shade', cursive;
   font-size: 20pt;
-  font-weight: 100; }
+  font-weight: 100;
+  cursor: pointer; }
 
 .nav-logo-txt p {
   margin-top: 0.5em;
@@ -280,17 +291,34 @@ button {
   text-decoration: underline; }
 
 .info-text {
-  font-size: 4vw; }
+  font-size: 3vw; }
+
+@media screen and (max-width: 665px) {
+  a.info-text {
+    font-size: 4vw; } }
 
 .project-container.about-box {
   padding: 30px; }
 
 .about-info {
-  text-align: center; }
+  text-align: center;
+  width: 85%; }
 
 .about-text {
   color: white;
   font-weight: 100; }
+
+.otherstuff-box {
+  border: 1px solid black;
+  height: 500px; }
+
+.kewpie-container {
+  border: 1px solid black;
+  width: 50%;
+  background: url("../images/kewpie-01.png") center no-repeat; }
+  @media screen and (max-width: 400px) {
+    .kewpie-container {
+      width: 90%; } }
 
 /* Fade */
 .hvr-fade {
