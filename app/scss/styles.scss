@@ -409,12 +409,10 @@ a.info-text {
 //Other Stuff//
 
 .otherstuff-box {
-	border: 1px solid black;
 	height: 500px;
 }
 
 .kewpie-container {
-	border: 1px solid black;
     width: 50%;
     background: url('../images/kewpie-01.png') center no-repeat;
     @media screen and (max-width: $breakSmall) {
